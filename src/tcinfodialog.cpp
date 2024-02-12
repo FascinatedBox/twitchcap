@@ -10,8 +10,8 @@ TCInfoDialog::TCInfoDialog(QWidget *parent, TCSettings *settings)
 
     QFormLayout *layout = new QFormLayout;
     QDialogButtonBox *box = new QDialogButtonBox(
-            QDialogButtonBox::Ok |
-            QDialogButtonBox::Cancel
+            QDialogButtonBox::Ok | QDialogButtonBox::Cancel,
+            parent
     );
 
     _userLine = new QLineEdit;

@@ -67,7 +67,7 @@ void TCMainWindow::showInfoDialog()
 {
     TCInfoDialog *dialog = new TCInfoDialog(this, _settings);
 
-    dialog->setMinimumWidth(400);
+    dialog->setMinimumWidth(300);
     centerWidget(dialog);
 
     if (dialog->exec() == QDialog::Rejected)
@@ -79,8 +79,8 @@ void TCMainWindow::showInfoDialog()
 
 void TCMainWindow::start()
 {
-    show();
     setMinimumWidth(600);
+    show();
     setMinimumWidth(0);
     centerWidget(this);
     showInfoDialog();
