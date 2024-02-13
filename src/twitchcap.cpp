@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     TCMainWindow w;
 
-    w.setStyleSheet(loadFile(":/twitchcap.qss"));
+    w.setStyleSheet(loadFile(":/style.qss"));
     w.start();
     return app.exec();
 }

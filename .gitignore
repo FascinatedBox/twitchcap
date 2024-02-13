@@ -4,6 +4,6 @@ CMakeFiles/
 Makefile
 cmake_install.cmake
 install_manifest.txt
+src/qrc_resources.cpp
+src/resources.qrc.depends
 twitchcap
-src/qrc_twitchcap.cpp
-src/resources/twitchcap.qrc.depends

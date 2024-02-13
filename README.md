@@ -1,9 +1,9 @@
 twitchcap
 =========
 
-![Demo image 1](/src/resources/demo1.png)
+![Demo image 1](/resources/demo1.png)
 
-![Demo image 2](/src/resources/demo2.png)
+![Demo image 2](/resources/demo2.png)
 
 ### Overview
 

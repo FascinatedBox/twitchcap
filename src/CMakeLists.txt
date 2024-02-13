@@ -1,6 +1,6 @@
 qt5_add_resources(
     RCC_SOURCES
-    resources/twitchcap.qrc
+    resources.qrc
 )
 
 add_executable(
