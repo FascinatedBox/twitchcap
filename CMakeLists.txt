@@ -1,8 +1,8 @@
-project(twitchcap)
 cmake_minimum_required(VERSION 3.5.0)
+project(twitchcap)
 
 find_package(
-    Qt5
+    Qt6
     COMPONENTS
         Network
         Widgets
@@ -10,13 +10,7 @@ find_package(
 )
 
 set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
 set(MOCUIC_DIR ${CMAKE_CURRENT_BINARY_DIR}/.mocuic)
-
-qt5_add_resources(
-    RCC_SOURCES
-        src/resources.qrc
-)
 
 add_executable(
     twitchcap
@@ -37,6 +31,6 @@ set_target_properties(
 
 target_link_libraries(
     twitchcap
-        Qt5::Network
-        Qt5::Widgets
+        Qt6::Network
+        Qt6::Widgets
 )

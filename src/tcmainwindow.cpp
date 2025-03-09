@@ -1,17 +1,8 @@
 #include <QApplication>
-#include <QDesktopWidget>
 #include <QVBoxLayout>
 
 #include "tcinfodialog.h"
 #include "tcmainwindow.h"
-
-void centerWidget(QWidget *w)
-{
-    QRect geometry = QApplication::desktop()->screenGeometry();
-    int x = (geometry.width() - w->width()) / 2;
-    int y = (geometry.height() - w->height()) / 2;
-    w->move(x, y);
-}
 
 TCMainWindow::TCMainWindow()
 {
@@ -68,7 +59,6 @@ void TCMainWindow::showInfoDialog()
     TCInfoDialog *dialog = new TCInfoDialog(this, _settings);
 
     dialog->setMinimumWidth(300);
-    centerWidget(dialog);
 
     if (dialog->exec() == QDialog::Rejected)
         exit(EXIT_FAILURE);
@@ -82,7 +72,6 @@ void TCMainWindow::start()
     setMinimumWidth(600);
     show();
     setMinimumWidth(0);
-    centerWidget(this);
     showInfoDialog();
     _connection->startConnect();
 }
